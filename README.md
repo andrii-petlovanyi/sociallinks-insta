@@ -11,4 +11,4 @@ The main magic of this page - Vanta.js. You can grab so many interesting effects
 
 If you have any questions or suggestions, please write to me.
 
-U-R-Wellcome <=> Petlovanyi A.
+U-R-Welcome <=> Petlovanyi A.
