@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <title>Andrii Petlovanyi - SocialLinks</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r119/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+    <script>
+      window.addEventListener('DOMContentLoaded', () => {
+        VANTA.NET({
+          el: '#vanta',
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 200.0,
+          minWidth: 200.0,
+          scale: 1.0,
+          scaleMobile: 1.0,
+          backgroundAlpha: 0.0,
+          color: 0x488eed,
+          maxDistance: 25.0,
+          spacing: 22.0,
+        });
+
+        setTimeout(() => {
+          const main = document.querySelector('main');
+          main.style.opacity = 0.9;
+          main.style.filter = 'blur(0px)';
+        }),
+          1000;
+      });
+    </script>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <!-- --- This is magic --- -->
+    <div id="vanta" class="bg">
+      <main class="page">
+        <!-- --- Profile --- -->
+        <section class="profile">
+          <img class="profile__photo" src="./images/logo_sq.jpg" alt="photo Andrii Petlovanyi" />
+          <h1 class="profile__initials">@andrii.petlovanyi</h1>
+        </section>
+
+        <!-- --- Social Liks Button --- -->
+        <section class="buttons">
+          <ul class="buttons-list">
+            <li class="list__item">
+              <a
+                class="list__link"
+                href="https://t.me/andrii_petlovanyi"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <svg class="list__icon" width="25" height="25" aria-label="Telegram">
+                  <use href="./images/impam_sprite.svg#telegram"></use>
+                </svg>
+                Telegram</a
+              >
+            </li>
+            <li class="list__item">
+              <a
+                class="list__link"
+                href="https://www.facebook.com/andrii.petlovanyi"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <svg class="list__icon" width="25" height="25" aria-label="Facebook">
+                  <use href="./images/impam_sprite.svg#facebook"></use>
+                </svg>
+                Facebook</a
+              >
+            </li>
+            <li class="list__item">
+              <a
+                class="list__link"
+                href="https://twitter.com/PetlovanyiA"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <svg class="list__icon" width="25" height="25" aria-label="Twitter">
+                  <use href="./images/impam_sprite.svg#twitter"></use>
+                </svg>
+                Twitter</a
+              >
+            </li>
+            <li class="list__item">
+              <a
+                class="list__link"
+                href="https://www.linkedin.com/in/andriipetlovanyi/"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <svg class="list__icon" width="25" height="25" aria-label="LinkedIn">
+                  <use href="./images/impam_sprite.svg#linkedin"></use>
+                </svg>
+                LinkedIn</a
+              >
+            </li>
+            <li class="list__item">
+              <a
+                class="list__link"
+                href="https://github.com/andrii-petlovanyi"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <svg class="list__icon" width="25" height="25" aria-label="GitHub">
+                  <use href="./images/impam_sprite.svg#github"></use>
+                </svg>
+                GitHub</a
+              >
+            </li>
+          </ul>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
