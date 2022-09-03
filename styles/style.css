@@ -30,7 +30,7 @@ a {
 }
 
 .bg {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   background: url(../images/bstars.png);
   background-repeat: repeat;
   z-index: -2;
@@ -56,7 +56,7 @@ a {
 .profile__photo {
   width: 6.9em;
   height: 6.9em;
-  margin-top: 5%;
+  margin-top: 4%;
   border-radius: 50%;
   box-shadow: var(--box-shadow-color) 0px 2px 20px 0px;
   border: 1px solid var(--box-shadow-color);
