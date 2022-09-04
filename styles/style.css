@@ -113,13 +113,13 @@ a {
   border-radius: 10em;
   border: 1px solid var(--box-shadow-color);
   box-shadow: rgb(28 32 93 / 24%) 0px 2px 8px 0px;
+  transition: 500ms;
 }
 
 .list__link:hover,
 .list__link:focus {
   background-color: var(--buttons-hover-bg-color);
   box-shadow: var(--box-shadow-color) 0px 2px 25px 0px;
-  transition: 300ms;
   font-weight: 500;
   color: var(--buttons-hover-color);
   cursor: pointer;
