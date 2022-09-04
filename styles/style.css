@@ -17,6 +17,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: var(--bg-color);
+  z-index: -3;
 }
 
 ul,
@@ -33,7 +34,7 @@ a {
   font-family: "Poppins", sans-serif;
   background: url(../images/Bstars.png);
   background-repeat: repeat;
-  z-index: -2;
+  z-index: 0;
 }
 
 .profile {
@@ -113,16 +114,16 @@ a {
   border-radius: 10em;
   border: 1px solid var(--box-shadow-color);
   box-shadow: rgb(28 32 93 / 24%) 0px 2px 8px 0px;
-  transition: 500ms;
+
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
 }
 
 .list__link:hover,
 .list__link:focus {
   background-color: var(--buttons-hover-bg-color);
   box-shadow: var(--box-shadow-color) 0px 2px 25px 0px;
-  font-weight: 500;
   color: var(--buttons-hover-color);
-  cursor: pointer;
 }
 
 .list__icon {
@@ -130,7 +131,7 @@ a {
 }
 
 #vanta {
-  z-index: -1;
+  z-index: -2;
   position: absolute;
   left: 0;
   top: 0;
